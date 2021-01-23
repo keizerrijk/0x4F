@@ -1,9 +1,11 @@
 /* site elements */
 
 body {
-  background-color: black;
-  color: lightgreen;
-  font-family: Verdana;
+	font-smooth:never;
+    font: 13px/1.231 Courier New,Courier,clean,sans-serif;
+    background-color: black;
+    color: lightgreen;
+    font-family: Verdana;
 }
 
 body {
@@ -13,18 +15,33 @@ body {
         line-height: 1.231;
 }
 
-img {
-	width: 250px;
-	height: 250px;
+links {
+	text-align: center;
+	width: 240;
+	height: 60;
 }
 
 .logoImg {
-	text-align:center;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  margin: auto;
 }
 
 .title {
 	text-align: center;
 	
+}
+
+.linkBanner {
+  width: 240px;
+  height: 60px;
+}
+
+.altLink {
+	text-align: center;
+	padding: 0px;
+	background: black;
 }
 
 .homeLinks {
