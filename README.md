@@ -1,2 +1,2 @@
 # CRYSTALDATA
-My personal site, hosted at https://crystaldata.neocities.org
+My personal site, hosted at https://0x4f.org/
