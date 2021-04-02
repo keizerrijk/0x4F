@@ -1,0 +1,39 @@
+int print_Orgfile(string homefolder) {
+    int lc;
+    string line;
+
+    cout << '\n' << "Listing Tasks:\n";
+
+    ifstream orgfile(homefolder);
+
+    //Loop that iteratively prints each line of the organisation file,
+    //and loads it's text into a task object, before pushing the
+    //newly created object into the orglist vector.
+    while(!orgfile.eof()) {
+        //Boolean to store if a task is completed or not.
+        bool comp_stat;
+        //Retrieves line from the file.
+        getline(orgfile, line);
+        //Checks if the line is empty before proceding.
+        if(line.size()) {
+            //Integer used to keep track of linecount.
+            lc++;
+            cout << lc << ' ' << line;
+            //If/else block to determine the value of the completion
+            //status bool.
+            if (line.back() == '0') {
+                comp_stat = true;
+                cout << "\b[X]" << endl;
+            } else {
+                comp_stat = false;
+                cout << "\b[ ]" << endl;
+            }
+            //loads line, and it's place in the file into a task object.
+            task task_object(lc, line, comp_stat);
+            //Dumps task object into orglist vector.
+            orglist.push_back(task_object);
+        }
+    }
+    cout << "\nTotal number of tasks: " << orglist.size() << endl;
+    return 0;
+}

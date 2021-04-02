@@ -95,6 +95,13 @@ links {
   clear: left;
 }
 
+.genericimage {
+	background-color: black;
+	border: 1px solid lightgreen;
+	padding: 0px;
+	margin: auto;
+}
+
 .pBreaker {
 	font-size: 18px;
 	text-align: center;

