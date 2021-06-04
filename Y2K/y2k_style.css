@@ -1,0 +1,30 @@
+body {
+    background-image: url("img/the_chain.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    height: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family:"Nicomedia";
+    text-align: center;
+    color: white;
+    font-size: 50;
+}
+
+.content-box {
+    background: rgba(255,255,255,.2);
+    width: 600px;
+    padding: 50px;
+    margin: auto;
+    float: center;
+    color: white;
+
+}
+
+p {
+    margin: 30px;
+    font-size: 15px;
+}
