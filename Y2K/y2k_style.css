@@ -2,7 +2,7 @@ body {
     background-image: url("img/the_chain.jpg");
     background-color: #cccccc;
     background-position: center;
-    height: 1600px;
+    height: 1780px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,14 +17,20 @@ h1 {
 .content-box {
     background: rgba(255,255,255,.2);
     width: 600px;
-    padding: 50px;
+    padding: 30px;
     margin: auto;
     float: center;
     color: white;
 
 }
 
+img {
+    width: 550px;
+    height: 340px;
+    border: 3px solid rgba(255,255,255,.8);
+}
+
 p {
     margin: 30px;
-    font-size: 15px;
+    font-size: 19px;
 }
