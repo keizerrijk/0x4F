@@ -1,7 +1,7 @@
 <?php
 	$host="localhost"; //Add your SQL Server host here
 	$user="root"; //SQL Username
-	$pass="root"; //SQL Password
+	$pass=""; //SQL Password
 	$dbname="site_data"; //SQL Database Name
 	$con=mysqli_connect($host,$user,$pass,$dbname);
 	
