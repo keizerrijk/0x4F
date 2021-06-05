@@ -1,7 +1,7 @@
 <?php
 $host="localhost"; //Add your SQL Server host here
 $user="root"; //SQL Username
-$pass=""; //SQL Password
+$pass="p@ssWord#12345";
 $dbname="site_data"; //SQL Database Name
 $con=mysqli_connect($host,$user,$pass,$dbname);
 if (mysqli_connect_errno($con))
@@ -17,6 +17,8 @@ if (!mysqli_query($con,$sql))
 die('Error: ' . mysqli_error($con));
 }
 else
-echo "Values Stored in our Database!";
+echo "Success!";
 mysqli_close($con);
 ?>
+
+<a href="/guestbook.php">Click here to go back to 0x4F</a>
