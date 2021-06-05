@@ -1,0 +1,82 @@
+:root {
+	--fg-col: #FFFFFF;
+	--main-col: #d2738a;
+	--bg-col: #000000;
+}
+
+@font-face {
+    font-family: 'pxplus_ibm_vga9regular';
+    src: url('/styles/pxplus_ibm_vga9-webfont.woff2') format('woff2'),
+         url('/styles/pxplus_ibm_vga9-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	color: var(--fg-col);
+	font-family: 'pxplus_ibm_vga9regular', monospace;
+}
+
+h1 {
+	font-size: 1.8em;
+	text-align: center;
+	border-bottom: 1px solid var(--main-col);
+}
+
+h2, h3 {
+	color: var(--fg-col);
+	font-style: italic;
+	font-weight: 500;
+	text-shadow: 0 0 5px var(--main-col);
+	clear: both;
+	margin-top: 50px;
+}
+
+h2 {
+	font-size: 1.6em;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+h3 {
+	font-size: 1.3em;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+@keyframes wiredlink {
+	50% {
+		color: var(--fg-col);
+		text-shadow: var(--main-col) 1px 4px 5px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	animation: wiredlink 1s ease-in-out infinite;
+}
+
+a:link {
+	color: var(--main-col);
+}
+
+a:visited {
+	color: var(--main-col);
+}
+
+a:hover {
+	color: var(--main-col);
+}
+
+@keyframes wiredarrow {
+	50% {
+		filter: grayscale(1) brightness(2) blur(1px);
+	}
+}
+
+.arrow:hover {
+	animation: wiredarrow 1s ease-in-out infinite;
+}
