@@ -1,0 +1,150 @@
+/* site elements */
+
+body {
+	font-smooth:never;
+    font: 13px/1.231 Courier New,Courier,clean,sans-serif;
+    background-color: black;
+    color: rgba(210,0,255);
+    font-family: Verdana;
+}
+
+body {
+	    font-smooth:never;
+        font: 13px/1.231 Courier New,Courier,clean,sans-serif;
+        font-size: 13px;
+        line-height: 1.231;
+}
+
+links {
+	text-align: center;
+	width: 240;
+	height: 60;
+}
+
+.logoImg {
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.title {
+	text-align: center;
+	
+}
+
+.linkBanner {
+  width: 240px;
+  height: 60px;
+}
+
+.altLink {
+	text-align: center;
+	padding: 0px;
+	background: black;
+}
+
+.homeLinks {
+  background-color: black;
+  width: 720px;
+  border: 1px solid rgba(210,0,255);
+  margin: auto;
+  float: center;
+  text-align: center;
+  font-size: 11px;
+}
+
+.introBox {
+  background-color: black;
+  width: 688px;
+  border: 1px solid rgba(210,0,255);
+  padding: 16px;
+  margin: auto;
+  float: center;
+}
+
+.projectTop {
+  background-color: black;
+  width: 500px;
+  border: 1px solid rgba(210,0,255);
+  margin: auto;
+  float: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+.project {
+  background-color: black;
+  width: 600px;
+  border: 1px solid rgba(210,0,255);
+  padding: 16px;
+  margin: auto;
+  float: center;
+}
+
+
+.cat {
+  background-color: black;
+  width: 65px;
+  height: 65px;
+  border: 1px solid rgba(210,0,255);
+  padding: 0px;
+  margin: auto;
+  float: center;
+  clear: left;
+}
+
+.genericimage {
+	background-color: black;
+	border: 1px solid rgba(210,0,255);
+	padding: 0px;
+	margin: auto;
+}
+
+.pBreaker {
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid rgba(210,0,255);
+}
+
+.pain {
+  background-color: black;
+  width: 500px;
+  height: 250px;
+  border: 1px solid rgba(210,0,255);
+  padding: 0px;
+  margin: auto;
+  float: center;
+}
+
+a{
+	background: rgba(210,0,255);
+	color:black;
+	font-size: 11px;
+	padding: 4px;
+}
+
+ul.introBox {
+	list-style-type: square;
+	background: rgba(210,0,255);
+	padding: 4px;
+}
+
+/*misc*/
+
+.pointyThing {
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+    opacity: 0;
+	animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
