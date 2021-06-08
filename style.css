@@ -28,6 +28,13 @@ links {
   margin: auto;
 }
 
+.artLogoImg {
+  text-align: center;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+}
+
 .title {
 	text-align: center;
 	
